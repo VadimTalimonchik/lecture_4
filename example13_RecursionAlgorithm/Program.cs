@@ -1,3 +1,12 @@
 ﻿// двумерные массивы
 
-Console.WriteLine("Hello, World!");
+string[,] table = new string[2, 5]; // создаём новый массив в котором 2 строки и 5 столбцов
+table[1, 2] = "слово";              // положили в массив заданное значение (слово)
+                                    // для печати или вывода массива используем цикл в цикле
+for(int rows = 0; rows < 2; rows++) // вывод строк
+{
+    for(int columns = 0; columns < 5; columns++) // вывод столбцов
+    {
+        Console.WriteLine($"-{table[rows, columns]}-"); // вывод в кансоль
+    }
+}
